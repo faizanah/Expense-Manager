@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title Management
+    script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"
+    javascript:
+      WebFont.load({
+        google: {"families": ["Poppins:300,400,500,600,700", "Roboto:300,400,500,600,700"]},
+        active: function () {
+          sessionStorage.fonts = true;
+        }
+      });
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+  body.m-page--wide.m-header--fixed.m-header--fixed-mobile.m-footer--push.m-aside--offcanvas-default
+    .m-grid.m-grid--hor.m-grid--root.m-page
+      = render 'shared/header'
+      /! begin::Body
+      .m-grid__item.m-grid__item--fluid.m-grid.m-grid--ver-desktop.m-grid--desktop.m-container.m-container--responsive.m-container--xxl.m-page__container.m-body
+        .m-grid__item.m-grid__item--fluid.m-wrapper
+          = yield
+      /! end::Body
+      = render 'shared/quicksidebar'
+      = render 'shared/footer'
+  #m_scroll_top.m-scroll-top
+  i.la.la-arrow-up
+  /! end::Scroll Top
+  /! begin::Quick Nav
+    ul.m-nav-sticky style=("margin-top: 30px;")
+      li.m-nav-sticky__item data-placement="left" data-toggle="m-tooltip" title="Purchase"
+        a href="https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" target="_blank"
+          i.la.la-cart-arrow-down
+      li.m-nav-sticky__item data-placement="left" data-toggle="m-tooltip" title="Documentation"
+        a href="https://keenthemes.com/metronic/documentation.html" target="_blank"
+          i.la.la-code-fork
+      li.m-nav-sticky__item data-placement="left" data-toggle="m-tooltip" title="Support"
+        a href="https://keenthemes.com/forums/forum/support/metronic5/" target="_blank"
+          i.la.la-life-ring
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'

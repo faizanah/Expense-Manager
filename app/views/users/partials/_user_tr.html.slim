@@ -1,0 +1,14 @@
+.m-widget4
+  - users.each do |user|
+    .m-widget4__item
+      .m-widget4__img.m-widget4__img--pic
+        = image_tag user.avatar
+      .m-widget4__info
+        span.m-widget4__title
+          = user.full_name
+        br
+        span.m-widget4__sub
+          = user.email
+      .m-widget4__ext
+        a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+          | Follow

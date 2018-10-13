@@ -1,0 +1,21 @@
+.header-image{
+  url: image-url('user_profile_bg.jpg');
+  background-size: cover;
+}
+.notification-bg{
+  url: image_url('notification_bg.jpg');
+  background-size: cover;
+}
+.quick-action-bg{
+  url: image_path('quick_actions_bg.jpg');
+  background-size: cover;
+}
+.bg_1{
+  background-image:url("bg-1.jpg");
+}
+.b-radius{
+  border-radius: 1.5em;
+}
+.user{
+  color: white!important;
+}

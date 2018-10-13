@@ -1,0 +1,52 @@
+.m-login__signin
+  .m-login__head
+    h3.m-login__title
+      | Sign In To Expense Manager
+  = form_for(:user, url: user_session_path, html: {class: 'm-login__form m-form'}) do |f|
+    = devise_error_messages!
+    .form-group.m-form__group
+      = f.email_field :email, autofocus: true, autocomplete: "off", placeholder: "Email", class: 'form-control m-input'
+    .form-group.m-form__group
+      = f.password_field :password, autocomplete: "current-password",  class: 'form-control m-input m-login__form-input--last', placeholder: "Password"
+    .row.m-login__form-sub
+      .col.m--align-left.m-login__form-left
+        label.m-checkbox.m-checkbox--light
+          = f.check_box :remember_me
+          | Remember me
+          span
+      .col.m--align-right.m-login__form-right
+        = link_to "Forget Password ?", "javascript:;", class: 'm-link', id: 'm_login_forget_password'
+    .m-login__form-action
+      = f.submit "Sign In", class: 'btn btn-focus.m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary', id: 'm_login_signin_submit'
+/ .m-login__forget-password
+  .m-login__head
+    h3.m-login__title
+      | Forgotten Password ?
+    .m-login__desc
+      | Enter your email to reset your password:
+  = form_for(resource, as: :invite, url: password_path(resource_name), html: { method: :post, class: 'm-login__form m-form ' }) do |f|
+    .form-group.m-form__group
+      = f.email_field :email, autofocus: true, autocomplete: "off", placeholder: "Email", class: 'form-control m-input'
+      / input#m_email.form-control.m-input autocomplete="off" name="email" placeholder="Email" type="text" /
+    .m-login__form-action
+      = f.submit "Request", class: 'btn btn-focus.m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary', id: 'm_login_forget_password_submit'
+      | &nbsp;&nbsp;
+      button#m_login_forget_password_cancel.btn.m-btn.m-btn--pill.m-btn--custom.m-btn--air.m-login__btn
+        | Cancel
+.m-login__signup
+  .m-login__head
+    h3.m-login__title
+      | Resend Invitation Instructions
+  = form_for :invite, url: user_invitation_path, html: {method: :post, class: 'm-login__form m-form ', id: 'invitation-form'} do |f|
+    = devise_error_messages!
+    - resource.class.invite_key_fields.each do |field|
+      .form-group.m-form__group
+        = f.text_field field, class: 'form-control m-input', placeholder: field
+    .m-login__form-action
+      = link_to "Request", "#",  class: 'btn btn-focus.m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary', id: 'm_login_signup_submit', onclick: "$('#invitation-form').submit()"
+      | &nbsp;&nbsp;
+      button#m_login_signup_cancel.btn.m-btn.m-btn--pill.m-btn--custom.m-btn--air.m-login__btn
+        | Cancel
+.m-login__account
+  span.m-login__account-msg
+  = link_to "Didn't receive invitation instructions?", "javascript:;", class: 'm-link m-link--light m-login__account-link', id: 'm_login_signup'

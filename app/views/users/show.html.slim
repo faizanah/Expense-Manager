@@ -1,0 +1,77 @@
+.col-xl-12
+  /! begin:: Widgets/New Users
+  .m-portlet.m-portlet--full-height
+    .m-portlet__head
+      .m-portlet__head-caption
+        .m-portlet__head-title
+          h3.m-portlet__head-text User Details
+    .m-portlet__body
+      .tab-content
+        #m_widget4_tab1_content.tab-pane.active
+          /! begin::Widget 14
+          .m-widget4
+            /! begin::Widget 14 Item
+            .m-widget4__item
+              .m-widget4__img.m-widget4__img--pic
+                =image_tag '300_13.jpg'
+              .m-widget4__info
+                span.m-widget4__title =@user.first_name
+              .m-widget4__ext
+                a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"  Edit
+              .m-widget4__ext
+                a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"  Delete
+                br/
+        #m_widget11_tab1_content.tab-pane.active
+          /! begin::Widget 11
+          .m-widget11
+            .table-responsive
+              /! begin::Table
+              table.table
+                /! begin::Thead
+                thead
+                  tr
+                    td.m-widget11__sales.m--align-center
+                    td.m-widget11__change.m--align-center
+                /! end::Thead
+                /! begin::Tbody
+                tbody
+                  tr
+                    td.m--align-center First Name
+                    td.m--align-center =@user.first_name
+                  tr
+                    td.m--align-center Last Name
+                    td.m--align-center = @user.last_name
+                  tr
+                    td.m--align-center Email
+                    td.m--align-center = @user.email
+                  tr
+                    td.m--align-center Phone
+                    td.m--align-center = @user.phone
+                  tr
+                    td.m--align-center Address
+                    td.m--align-center = @user.address
+                  tr
+                    td.m--align-center Created At
+                    td.m--align-center = @user.created_at
+                  tr
+                    td.m--align-center Satus
+                    td.m--align-center = @user.status
+                  tr
+                    td.m--align-center Role
+                    td.m--align-center = @user.role
+                  tr
+                    td.m--align-center Invitation Token Created
+                    td.m--align-center = @user.invitation_created_at
+                  tr
+                    td.m--align-center Invitation Token Sent
+                    td.m--align-center = @user.invitation_sent_at
+                  tr
+                    td.m--align-center Invitation Token Accepted
+                    td.m--align-center = @user.invitation_accepted_at
+                  tr
+                    td.m--align-center Invited By
+                    td.m--align-center = @user.invited_by_id
+                    /! end::Tbody
+                      /! end::Table
+
+

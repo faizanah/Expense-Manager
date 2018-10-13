@@ -1,0 +1,52 @@
+.row
+  .col-lg-12
+    /! begin::Portlet
+    .m-portlet.bg_1
+      /! begin::Form
+      = form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put } do |f|
+        = f.hidden_field :invitation_token, readonly: true
+        - if f.object.class.require_password_on_accepting
+          .m-portlet__body.user
+            .m-form__section.m-form__section--first
+              .m-form__heading
+                h3.m-form__heading-title
+                  | User Info:
+              .form-group.m-form__group.row
+                label.col-lg-2.col-form-label
+                  | First Name:
+                .col-lg-4
+                  = f.text_field :first_name, placeholder: "First Name", class: 'form-control m-input'
+              .form-group.m-form__group.row
+                label.col-lg-2.col-form-label
+                  | Last Name:
+                .col-lg-4
+                  = f.text_field :last_name, placeholder: "Last Name", class: 'form-control m-input'
+              .form-group.m-form__group.row
+                label.col-lg-2.col-form-label
+                  | Password:
+                .col-lg-4
+                  = f.password_field :password, autocomplete: "current-password",  class: 'form-control m-input', placeholder: "Password"
+              .form-group.m-form__group.row
+                label.col-lg-2.col-form-label
+                  | Confirm Password:
+                .col-lg-4
+                  = f.password_field :password_confirmation, autocomplete: "current-password", class: 'form-control m-input', placeholder: "Confirm Password"
+              .form-group.m-form__group.row
+                label.col-lg-2.col-form-label
+                  | Phone:
+                .col-lg-4
+                  = f.text_field :phone, placeholder: "Phone", class: 'form-control m-input'
+              .form-group.m-form__group.row
+                label.col-lg-2.col-form-label
+                  | Address:
+                .col-lg-4
+                  = f.text_field :address, placeholder: "Address", class: 'form-control m-input'
+        .m-form__actions.m-form__actions
+          .row
+            .col-lg-3
+            .col-lg-1
+              = f.submit "Submit", class: 'btn-secondary b-radius'
+            .col-lg-4
+              =f.button "Cancel", type:'reset',  class: 'btn-secondary b-radius'
+        /! end::Form
+    /! end::Portlet

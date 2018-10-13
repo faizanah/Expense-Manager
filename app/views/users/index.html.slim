@@ -1,0 +1,32 @@
+/! BEGIN: Subheader
+.m-subheader
+  .d-flex.align-items-center
+  button.btn.m-btn--square.btn-primary.active.m-btn.m-btn--custom.pull-right type="button"
+    i.la.la-plus
+  = render 'users/partials/modal_form', user: User.new
+.m-content
+  .row
+    .col-xl-12
+      /! begin:: Widgets/New Users
+      .m-portlet.m-portlet--full-height
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | List of All Users
+          .m-portlet__head-tools
+            ul.nav.nav-pills.nav-pills--brand.m-nav-pills--align-right.m-nav-pills--btn-pill.m-nav-pills--btn-sm role="tablist"
+              li.nav-item.m-tabs__item
+                a.nav-link.m-tabs__link.active data-toggle="tab" href="#all-tab" role="tab"
+                  | All
+              - User.statuses.keys.sort.each do |key|
+                li.nav-item.m-tabs__item
+                  = link_to key.humanize, "##{key}-tab", class: 'nav-link m-tabs__link', role: 'tab',data: {'toggle': 'tab'}
+        .m-portlet__body
+          .tab-content
+            #all-tab.tab-pane.active
+              = render 'users/partials/user_tr', users: @users
+            - User.statuses.keys.each do |key|
+              .tab-pane.active id=("#{key}-tab")
+                = render 'users/partials/user_tr', users: User.where(status: key)
+

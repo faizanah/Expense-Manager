@@ -1,0 +1,1724 @@
+/! BEGIN: Subheader
+.m-subheader
+  .d-flex.align-items-center
+    .mr-auto
+      h3.m-subheader__title
+        | Dashboard
+    div
+      span#m_dashboard_daterangepicker.m-subheader__daterange
+        span.m-subheader__daterange-label
+          span.m-subheader__daterange-title
+          span.m-subheader__daterange-date.m--font-brand
+        a.btn.btn-sm.btn-brand.m-btn.m-btn--icon.m-btn--icon-only.m-btn--custom.m-btn--pill href="#"
+          i.la.la-angle-down
+/! END: Subheader
+.m-content
+  /! begin:: Widgets/Stats
+  .m-portlet
+    .m-portlet__body.m-portlet__body--no-padding
+      .row.m-row--no-padding.m-row--col-separator-xl
+        .col-md-12.col-lg-6.col-xl-3
+          /! begin::Total Profit
+          .m-widget24
+            .m-widget24__item
+              h4.m-widget24__title
+                | Total Frofit
+              br/
+              span.m-widget24__desc
+                | All Customs Value
+              span.m-widget24__stats.m--font-brand
+                | $18M
+              .m--space-10
+              .progress.m-progress--sm
+                .progress-bar.m--bg-brand aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar" style=("width: 78%;")
+              span.m-widget24__change
+                | Change
+              span.m-widget24__number
+                | 78%
+        /! end::Total Profit
+        .col-md-12.col-lg-6.col-xl-3
+          /! begin::New Feedbacks
+          .m-widget24
+            .m-widget24__item
+              h4.m-widget24__title
+                | New Feedbacks
+              br/
+              span.m-widget24__desc
+                | Customer Review
+              span.m-widget24__stats.m--font-info
+                | 1349
+              .m--space-10
+              .progress.m-progress--sm
+                .progress-bar.m--bg-info aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar" style=("width: 84%;")
+              span.m-widget24__change
+                | Change
+              span.m-widget24__number
+                | 84%
+        /! end::New Feedbacks
+        .col-md-12.col-lg-6.col-xl-3
+          /! begin::New Orders
+          .m-widget24
+            .m-widget24__item
+              h4.m-widget24__title
+                | New Orders
+              br/
+              span.m-widget24__desc
+                | Fresh Order Amount
+              span.m-widget24__stats.m--font-danger
+                | 567
+              .m--space-10
+              .progress.m-progress--sm
+                .progress-bar.m--bg-danger aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar" style=("width: 69%;")
+              span.m-widget24__change
+                | Change
+              span.m-widget24__number
+                | 69%
+        /! end::New Orders
+        .col-md-12.col-lg-6.col-xl-3
+          /! begin::New Users
+          .m-widget24
+            .m-widget24__item
+              h4.m-widget24__title
+                | New Users
+              br/
+              span.m-widget24__desc
+                | Joined New User
+              span.m-widget24__stats.m--font-success
+                | 276
+              .m--space-10
+              .progress.m-progress--sm
+                .progress-bar.m--bg-success aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar" style=("width: 90%;")
+              span.m-widget24__change
+                | Change
+              span.m-widget24__number
+                | 90%
+  /! end::New Users
+  /! end:: Widgets/Stats
+  /! Begin::Section
+  .row
+    .col-xl-4
+      /! begin:: Widgets/New Users
+      .m-portlet.m-portlet--full-height
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | New Users
+          .m-portlet__head-tools
+            ul.nav.nav-pills.nav-pills--brand.m-nav-pills--align-right.m-nav-pills--btn-pill.m-nav-pills--btn-sm role="tablist"
+              li.nav-item.m-tabs__item
+                a.nav-link.m-tabs__link.active data-toggle="tab" href="#m_widget4_tab1_content" role="tab"
+                  | Today
+              li.nav-item.m-tabs__item
+                a.nav-link.m-tabs__link data-toggle="tab" href="#m_widget4_tab2_content" role="tab"
+                  | Month
+        .m-portlet__body
+          .tab-content
+            #m_widget4_tab1_content.tab-pane.active
+              /! begin::Widget 14
+              .m-widget4
+                /! begin::Widget 14 Item
+                .m-widget4__item
+                  .m-widget4__img.m-widget4__img--pic
+                    = image_tag '100_4.jpg'
+                  .m-widget4__info
+                    span.m-widget4__title
+                      | Anna Strong
+                    br/
+                    span.m-widget4__sub
+                      | Visual Designer,Google Inc
+                  .m-widget4__ext
+                    a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+                      | Follow
+                /! end::Widget 14 Item
+                /! begin::Widget 14 Item
+                .m-widget4__item
+                  .m-widget4__img.m-widget4__img--pic
+                    = image_tag '100_14.jpg'
+                  .m-widget4__info
+                    span.m-widget4__title
+                      | Milano Esco
+                    br/
+                    span.m-widget4__sub
+                      | Product Designer, Apple Inc
+                  .m-widget4__ext
+                    a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+                      | Follow
+                /! end::Widget 14 Item
+                /! begin::Widget 14 Item
+                .m-widget4__item
+                  .m-widget4__img.m-widget4__img--pic
+                    = image_tag '100_11.jpg'
+                  .m-widget4__info
+                    span.m-widget4__title
+                      | Nick Bold
+                    br/
+                    span.m-widget4__sub
+                      | Web Developer, Facebook Inc
+                  .m-widget4__ext
+                    a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+                      | Follow
+                /! end::Widget 14 Item
+                /! begin::Widget 14 Item
+                .m-widget4__item
+                  .m-widget4__img.m-widget4__img--pic
+                    = image_tag '100_1.jpg'
+                  .m-widget4__info
+                    span.m-widget4__title
+                      | Wiltor Delton
+                    br/
+                    span.m-widget4__sub
+                      | Project Manager, Amazon Inc
+                  .m-widget4__ext
+                    a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+                      | Follow
+                /! end::Widget 14 Item
+                /! begin::Widget 14 Item
+                .m-widget4__item
+                  .m-widget4__img.m-widget4__img--pic
+                    = image_tag '100_5.jpg'
+                  .m-widget4__info
+                    span.m-widget4__title
+                      | Nick Stone
+                    br/
+                    span.m-widget4__sub
+                      | Visual Designer, Github Inc
+                  .m-widget4__ext
+                    a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+                      | Follow
+            /! end::Widget 14 Item
+            /! end::Widget 14
+            #m_widget4_tab2_content.tab-pane
+              /! begin::Widget 14
+              .m-widget4
+                /! begin::Widget 14 Item
+                .m-widget4__item
+                  .m-widget4__img.m-widget4__img--pic
+                    = image_tag '100_2.jpg'
+                  .m-widget4__info
+                    span.m-widget4__title
+                      | Kristika Bold
+                    br/
+                    span.m-widget4__sub
+                      | Product Designer,Apple Inc
+                  .m-widget4__ext
+                    a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+                      | Follow
+                /! end::Widget 14 Item
+                /! begin::Widget 14 Item
+                .m-widget4__item
+                  .m-widget4__img.m-widget4__img--pic
+                    = image_tag '100_13.jpg'
+                  .m-widget4__info
+                    span.m-widget4__title
+                      | Ron Silk
+                    br/
+                    span.m-widget4__sub
+                      | Release Manager, Loop Inc
+                  .m-widget4__ext
+                    a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+                      | Follow
+                /! end::Widget 14 Item
+                /! begin::Widget 14 Item
+                .m-widget4__item
+                  .m-widget4__img.m-widget4__img--pic
+                    = image_tag '100_9.jpg'
+                  .m-widget4__info
+                    span.m-widget4__title
+                      | Nick Bold
+                    br/
+                    span.m-widget4__sub
+                      | Web Developer, Facebook Inc
+                  .m-widget4__ext
+                    a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+                      | Follow
+                /! end::Widget 14 Item
+                /! begin::Widget 14 Item
+                .m-widget4__item
+                  .m-widget4__img.m-widget4__img--pic
+                    = image_tag '100_2.jpg'
+                  .m-widget4__info
+                    span.m-widget4__title
+                      | Wiltor Delton
+                    br/
+                    span.m-widget4__sub
+                      | Project Manager, Amazon Inc
+                  .m-widget4__ext
+                    a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+                      | Follow
+                /! end::Widget 14 Item
+                /! end::Widget 14 Item
+                /! begin::Widget 14 Item
+                .m-widget4__item
+                  .m-widget4__img.m-widget4__img--pic
+                    = image_tag '100_8.jpg'
+                  .m-widget4__info
+                    span.m-widget4__title
+                      | Nick Bold
+                    br/
+                    span.m-widget4__sub
+                      | Web Developer, Facebook Inc
+                  .m-widget4__ext
+                    a.m-btn.m-btn--pill.m-btn--hover-brand.btn.btn-sm.btn-secondary href="#"
+                      | Follow
+    /! end::Widget 14 Item
+    /! end::Widget 14
+    /! end:: Widgets/New Users
+    .col-xl-4
+      /! begin:: Widgets/Inbound Bandwidth
+      .m-portlet.m-portlet--bordered-semi.m-portlet--half-height.m-portlet--fit style=("min-height: 300px")
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Inbound Bandwidth
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item.m-dropdown.m-dropdown--inline.m-dropdown--arrow.m-dropdown--align-right.m-dropdown--align-push aria-expanded="true" m-dropdown-toggle="hover"
+                a.m-portlet__nav-link.m-dropdown__toggle.dropdown-toggle.btn.btn--sm.m-btn--pill.btn-secondary.m-btn.m-btn--label-brand href="#"
+                  | Today
+                .m-dropdown__wrapper
+                  span.m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust style=("left: auto; right: 36.5px;")
+                  .m-dropdown__inner
+                    .m-dropdown__body
+                      .m-dropdown__content
+                        ul.m-nav
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-share
+                              span.m-nav__link-text
+                                | Activity
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-chat-1
+                              span.m-nav__link-text
+                                | Messages
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-info
+                              span.m-nav__link-text
+                                | FAQ
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-lifebuoy
+                              span.m-nav__link-text
+                                | Support
+        .m-portlet__body
+          /! begin::Widget5
+          .m-widget20
+            .m-widget20__number.m--font-success
+              | 670
+            .m-widget20__chart style="height:160px;"
+              canvas#m_chart_bandwidth1
+      /! end::Widget 5
+      /! end:: Widgets/Inbound Bandwidth
+      .m--space-30
+      /! begin:: Widgets/Outbound Bandwidth
+      .m-portlet.m-portlet--bordered-semi.m-portlet--half-height.m-portlet--fit style=("min-height: 300px")
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Outbound Bandwidth
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item.m-dropdown.m-dropdown--inline.m-dropdown--arrow.m-dropdown--align-right.m-dropdown--align-push aria-expanded="true" m-dropdown-toggle="hover"
+                a.m-portlet__nav-link.m-dropdown__toggle.dropdown-toggle.btn.btn--sm.m-btn--pill.btn-secondary.m-btn.m-btn--label-brand href="#"
+                  | Today
+                .m-dropdown__wrapper
+                  span.m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust style=("left: auto; right: 36.5px;")
+                  .m-dropdown__inner
+                    .m-dropdown__body
+                      .m-dropdown__content
+                        ul.m-nav
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-share
+                              span.m-nav__link-text
+                                | Activity
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-chat-1
+                              span.m-nav__link-text
+                                | Messages
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-info
+                              span.m-nav__link-text
+                                | FAQ
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-lifebuoy
+                              span.m-nav__link-text
+                                | Support
+        .m-portlet__body
+          /! begin::Widget5
+          .m-widget20
+            .m-widget20__number.m--font-warning
+              | 340
+            .m-widget20__chart style="height:160px;"
+              canvas#m_chart_bandwidth2
+    /! end::Widget 5
+    /! end:: Widgets/Outbound Bandwidth
+    .col-xl-4
+      /! begin:: Widgets/Top Products
+      .m-portlet.m-portlet--full-height.m-portlet--fit
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Top Products
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item.m-dropdown.m-dropdown--inline.m-dropdown--arrow.m-dropdown--align-right.m-dropdown--align-push aria-expanded="true" m-dropdown-toggle="hover"
+                a.m-portlet__nav-link.m-dropdown__toggle.dropdown-toggle.btn.btn--sm.m-btn--pill.btn-secondary.m-btn.m-btn--label-brand href="#"
+                  | All
+                .m-dropdown__wrapper
+                  span.m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust style=("left: auto; right: 36.5px;")
+                  .m-dropdown__inner
+                    .m-dropdown__body
+                      .m-dropdown__content
+                        ul.m-nav
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-share
+                              span.m-nav__link-text
+                                | Activity
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-chat-1
+                              span.m-nav__link-text
+                                | Messages
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-info
+                              span.m-nav__link-text
+                                | FAQ
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-lifebuoy
+                              span.m-nav__link-text
+                                | Support
+        .m-portlet__body
+          /! begin::Widget5
+          .m-widget4.m-widget4--chart-bottom style=("min-height: 480px")
+            .m-widget4__item
+              .m-widget4__img.m-widget4__img--logo
+                = image_tag 'logo3.png'
+              .m-widget4__info
+                span.m-widget4__title
+                  | Phyton
+                br/
+                span.m-widget4__sub
+                  | A Programming Language
+              span.m-widget4__ext
+                span.m-widget4__number.m--font-brand
+                  | +$17
+            .m-widget4__item
+              .m-widget4__img.m-widget4__img--logo
+                = image_tag 'logo1.png'
+              .m-widget4__info
+                span.m-widget4__title
+                  | FlyThemes
+                br/
+                span.m-widget4__sub
+                  | A Let's Fly Fast Again Language
+              span.m-widget4__ext
+                span.m-widget4__number.m--font-brand
+                  | +$300
+            .m-widget4__item
+              .m-widget4__img.m-widget4__img--logo
+                = image_tag 'logo4.png'
+              .m-widget4__info
+                span.m-widget4__title
+                  | Starbucks
+                br/
+                span.m-widget4__sub
+                  | Good Coffee &amp; Snacks
+              span.m-widget4__ext
+                span.m-widget4__number.m--font-brand
+                  | +$300
+            .m-widget4__chart.m-portlet-fit--sides.m--margin-top-20 style="height:260px;"
+              canvas#m_chart_trends_stats_2
+  /! end::Widget 5
+  /! end:: Widgets/Top Products
+  /! End::Section
+  /! Begin::Section
+  .row
+    .col-xl-6
+      /! begin:: Widgets/Support Cases
+      .m-portlet.m-portlet--full-height
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Support Cases
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item.m-dropdown.m-dropdown--inline.m-dropdown--arrow.m-dropdown--align-right.m-dropdown--align-push aria-expanded="true" m-dropdown-toggle="hover"
+                a.m-portlet__nav-link.m-portlet__nav-link--icon.m-portlet__nav-link--icon-xl.m-dropdown__toggle href="#"
+                  i.la.la-ellipsis-h.m--font-brand
+                .m-dropdown__wrapper
+                  span.m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust
+                  .m-dropdown__inner
+                    .m-dropdown__body
+                      .m-dropdown__content
+                        ul.m-nav
+                          li.m-nav__section.m-nav__section--first
+                            span.m-nav__section-text
+                              | Quick Actions
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-share
+                              span.m-nav__link-text
+                                | Activity
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-chat-1
+                              span.m-nav__link-text
+                                | Messages
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-info
+                              span.m-nav__link-text
+                                | FAQ
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-lifebuoy
+                              span.m-nav__link-text
+                                | Support
+                          li.m-nav__separator.m-nav__separator--fit
+                          li.m-nav__item
+                            a.btn.btn-outline-danger.m-btn.m-btn--pill.m-btn--wide.btn-sm href="#"
+                              | Cancel
+        .m-portlet__body
+          .m-widget16
+            .row
+              .col-md-5
+                .m-widget16__head
+                  .m-widget16__item
+                    span.m-widget16__sceduled
+                      | Type
+                    span.m-widget16__amount.m--align-right
+                      | Amount
+                .m-widget16__body
+                  /! begin::widget item
+                  .m-widget16__item
+                    span.m-widget16__date
+                      | EPS
+                    span.m-widget16__price.m--align-right.m--font-brand
+                      | +78,05%
+                  /! end::widget item
+                  /! begin::widget item
+                  .m-widget16__item
+                    span.m-widget16__date
+                      | PDO
+                    span.m-widget16__price.m--align-right.m--font-accent
+                      | 21,700
+                  /! end::widget item
+                  /! begin::widget item
+                  .m-widget16__item
+                    span.m-widget16__date
+                      | OPL Status
+                    span.m-widget16__price.m--align-right.m--font-danger
+                      | Negative
+                  /! end::widget item
+                  /! begin::widget item
+                  .m-widget16__item
+                    span.m-widget16__date
+                      | Priority
+                    span.m-widget16__price.m--align-right.m--font-brand
+                      | +500,200
+                  /! end::widget item
+                  /! begin::widget item
+                  .m-widget16__item
+                    span.m-widget16__date
+                      | Net Prifit
+                    span.m-widget16__price.m--align-right.m--font-brand
+                      | $18,540,60
+              /! end::widget item
+              .col-md-7
+                .m-widget16__stats
+                  .m-widget16__visual
+                    #m_chart_support_tickets style=("height: 180px")
+                  .m-widget16__legends
+                    .m-widget16__legend
+                      span.m-widget16__legend-bullet.m--bg-info
+                      span.m-widget16__legend-text
+                        | 20% Margins
+                    .m-widget16__legend
+                      span.m-widget16__legend-bullet.m--bg-accent
+                      span.m-widget16__legend-text
+                        | 80% Profit
+                    .m-widget16__legend
+                      span.m-widget16__legend-bullet.m--bg-danger
+                      span.m-widget16__legend-text
+                        | 10% Lost
+    /! end:: Widgets/Support Stats
+    .col-xl-6
+      /! begin:: Finance Stats
+      .m-portlet.m-portlet--full-height
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Finance Stats
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item.m-dropdown.m-dropdown--inline.m-dropdown--arrow.m-dropdown--align-right.m-dropdown--align-push aria-expanded="true" m-dropdown-toggle="hover"
+                a.m-portlet__nav-link.m-portlet__nav-link--icon.m-portlet__nav-link--icon-xl.m-dropdown__toggle href="#"
+                  i.la.la-ellipsis-h.m--font-brand
+                .m-dropdown__wrapper
+                  span.m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust
+                  .m-dropdown__inner
+                    .m-dropdown__body
+                      .m-dropdown__content
+                        ul.m-nav
+                          li.m-nav__section.m-nav__section--first
+                            span.m-nav__section-text
+                              | Quick Actions
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-share
+                              span.m-nav__link-text
+                                | Activity
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-chat-1
+                              span.m-nav__link-text
+                                | Messages
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-info
+                              span.m-nav__link-text
+                                | FAQ
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-lifebuoy
+                              span.m-nav__link-text
+                                | Support
+                          li.m-nav__separator.m-nav__separator--fit
+                          li.m-nav__item
+                            a.btn.btn-outline-danger.m-btn.m-btn--pill.m-btn--wide.btn-sm href="#"
+                              | Cancel
+        .m-portlet__body
+          .m-widget1.m-widget1--paddingless
+            .m-widget1__item
+              .row.m-row--no-padding.align-items-center
+                .col
+                  h3.m-widget1__title
+                    | IPO Margin
+                  span.m-widget1__desc
+                    | Awerage IPO Margin
+                .col.m--align-right
+                  span.m-widget1__number.m--font-accent
+                    | +24%
+            .m-widget1__item
+              .row.m-row--no-padding.align-items-center
+                .col
+                  h3.m-widget1__title
+                    | Payments
+                  span.m-widget1__desc
+                    | Yearly Expenses
+                .col.m--align-right
+                  span.m-widget1__number.m--font-info
+                    | +$560,800
+            .m-widget1__item
+              .row.m-row--no-padding.align-items-center
+                .col
+                  h3.m-widget1__title
+                    | Logistics
+                  span.m-widget1__desc
+                    | Overall Regional Logistics
+                .col.m--align-right
+                  span.m-widget1__number.m--font-warning
+                    | \-10%
+            .m-widget1__item
+              .row.m-row--no-padding.align-items-center
+                .col
+                  h3.m-widget1__title
+                    | Expenses
+                  span.m-widget1__desc
+                    | Balance
+                .col.m--align-right
+                  span.m-widget1__number.m--font-danger
+                    | $345,000
+  /! end:: Finance Stats
+  /! End::Section
+  /! Begin::Section
+  .row
+    .col-xl-12
+      /! begin::Portlet
+      #m_portlet.m-portlet
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              span.m-portlet__head-icon
+                i.flaticon-map-location
+              h3.m-portlet__head-text
+                | Calendar
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item
+                a.btn.btn-accent.m-btn.m-btn--custom.m-btn--icon.m-btn--pill.m-btn--air href="#"
+                  span
+                    i.la.la-plus
+                    span
+                      | Add Event
+        .m-portlet__body
+          #m_calendar
+  /! end::Portlet
+  /! End::Section
+  /! Begin::Section
+  .row
+    .col-xl-6.col-lg-12
+      /! Begin::Portlet
+      .m-portlet.m-portlet--full-height
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Recent Activities
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item.m-dropdown.m-dropdown--inline.m-dropdown--arrow.m-dropdown--align-right.m-dropdown--align-push aria-expanded="true" m-dropdown-toggle="hover"
+                a.m-portlet__nav-link.m-portlet__nav-link--icon.m-portlet__nav-link--icon-xl.m-dropdown__toggle href="#"
+                  i.la.la-ellipsis-h.m--font-brand
+                .m-dropdown__wrapper
+                  span.m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust
+                  .m-dropdown__inner
+                    .m-dropdown__body
+                      .m-dropdown__content
+                        ul.m-nav
+                          li.m-nav__section.m-nav__section--first
+                            span.m-nav__section-text
+                              | Quick Actions
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-share
+                              span.m-nav__link-text
+                                | Activity
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-chat-1
+                              span.m-nav__link-text
+                                | Messages
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-info
+                              span.m-nav__link-text
+                                | FAQ
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-lifebuoy
+                              span.m-nav__link-text
+                                | Support
+                          li.m-nav__separator.m-nav__separator--fit
+                          li.m-nav__item
+                            a.btn.btn-outline-danger.m-btn.m-btn--pill.m-btn--wide.btn-sm href="#"
+                              | Cancel
+        .m-portlet__body
+          .m-scrollable.mCustomScrollbar._mCS_5.mCS-autoHide data-max-height="380" data-scrollable="true" data-scrollbar-shown="true" style=("overflow: visible; height: 380px; max-height: 380px; position: relative;")
+            /! Begin::Timeline 2
+            .m-timeline-2
+              .m-timeline-2__items.m--padding-top-25.m--padding-bottom-30
+                .m-timeline-2__item
+                  span.m-timeline-2__item-time
+                    | 10:00
+                  .m-timeline-2__item-cricle
+                    i.fa.fa-genderless.m--font-danger
+                  .m-timeline-2__item-text.m--padding-top-5
+                    | Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
+                    br/
+                    | incididunt ut labore et dolore magna
+                .m-timeline-2__item.m--margin-top-30
+                  span.m-timeline-2__item-time
+                    | 12:45
+                  .m-timeline-2__item-cricle
+                    i.fa.fa-genderless.m--font-success
+                  .m-timeline-2__item-text.m-timeline-2__item-text--bold
+                    | AEOL Meeting With
+                  .m-list-pics.m-list-pics--sm.m--padding-left-20
+                    a href="#"
+                      = image_tag '100_4.jpg'
+                    a href="#"
+                      = image_tag '100_13.jpg'
+                    a href="#"
+                      = image_tag '100_11.jpg'
+                    a href="#"
+                      = image_tag '100_14.jpg'
+                .m-timeline-2__item.m--margin-top-30
+                  span.m-timeline-2__item-time
+                    | 14:00
+                  .m-timeline-2__item-cricle
+                    i.fa.fa-genderless.m--font-brand
+                  .m-timeline-2__item-text.m--padding-top-5
+                    | Make Deposit
+                    a.m-link.m-link--brand.m--font-bolder href="#"
+                      | USD 700
+                    | To ESL.
+                .m-timeline-2__item.m--margin-top-30
+                  span.m-timeline-2__item-time
+                    | 16:00
+                  .m-timeline-2__item-cricle
+                    i.fa.fa-genderless.m--font-warning
+                  .m-timeline-2__item-text.m--padding-top-5
+                    | Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
+                    br/
+                    | incididunt ut labore et dolore magna elit enim at minim
+                    br/
+                    | veniam quis nostrud
+                .m-timeline-2__item.m--margin-top-30
+                  span.m-timeline-2__item-time
+                    | 17:00
+                  .m-timeline-2__item-cricle
+                    i.fa.fa-genderless.m--font-info
+                  .m-timeline-2__item-text.m--padding-top-5
+                    | Placed a new order in
+                    a.m-link.m-link--brand.m--font-bolder href="#"
+                      | SIGNATURE MOBILE
+                    | marketplace.
+                .m-timeline-2__item.m--margin-top-30
+                  span.m-timeline-2__item-time
+                    | 16:00
+                  .m-timeline-2__item-cricle
+                    i.fa.fa-genderless.m--font-brand
+                  .m-timeline-2__item-text.m--padding-top-5
+                    | Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
+                    br/
+                    | incididunt ut labore et dolore magna elit enim at minim
+                    br/
+                    | veniam quis nostrud
+                .m-timeline-2__item.m--margin-top-30
+                  span.m-timeline-2__item-time
+                    | 17:00
+                  .m-timeline-2__item-cricle
+                    i.fa.fa-genderless.m--font-danger
+                  .m-timeline-2__item-text.m--padding-top-5
+                    | Received a new feedback on
+                    a.m-link.m-link--brand.m--font-bolder href="#"
+                      | FinancePro App
+                    | product.
+    /! End::Timeline 2
+    /! End::Portlet
+    .col-xl-6.col-lg-12
+      /! Begin::Portlet
+      .m-portlet.m-portlet--full-height
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Recent Notifications
+          .m-portlet__head-tools
+            ul.nav.nav-pills.nav-pills--brand.m-nav-pills--align-right.m-nav-pills--btn-pill.m-nav-pills--btn-sm role="tablist"
+              li.nav-item.m-tabs__item
+                a.nav-link.m-tabs__link.active data-toggle="tab" href="#m_widget2_tab1_content" role="tab"
+                  | Today
+              li.nav-item.m-tabs__item
+                a.nav-link.m-tabs__link data-toggle="tab" href="#m_widget2_tab2_content" role="tab"
+                  | Month
+        .m-portlet__body
+          .tab-content
+            #m_widget2_tab1_content.tab-pane.active
+              /! Begin::Timeline 3
+              .m-timeline-3
+                .m-timeline-3__items
+                  .m-timeline-3__item.m-timeline-3__item--info
+                    span.m-timeline-3__item-time
+                      | 09:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By Bob
+                  .m-timeline-3__item.m-timeline-3__item--warning
+                    span.m-timeline-3__item-time
+                      | 10:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Lorem ipsum dolor sit amit
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By Sean
+                  .m-timeline-3__item.m-timeline-3__item--brand
+                    span.m-timeline-3__item-time
+                      | 11:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Lorem ipsum dolor sit amit eiusmdd tempor
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By James
+                  .m-timeline-3__item.m-timeline-3__item--success
+                    span.m-timeline-3__item-time
+                      | 12:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Lorem ipsum dolor
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By James
+                  .m-timeline-3__item.m-timeline-3__item--danger
+                    span.m-timeline-3__item-time
+                      | 14:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Lorem ipsum dolor sit amit,consectetur eiusmdd
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By Derrick
+                  .m-timeline-3__item.m-timeline-3__item--info
+                    span.m-timeline-3__item-time
+                      | 15:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Lorem ipsum dolor sit amit,consectetur
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By Iman
+                  .m-timeline-3__item.m-timeline-3__item--brand
+                    span.m-timeline-3__item-time
+                      | 17:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Lorem ipsum dolor sit consectetur eiusmdd tempor
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By Aziko
+            /! End::Timeline 3
+            #m_widget2_tab2_content.tab-pane
+              /! Begin::Timeline 3
+              .m-timeline-3
+                .m-timeline-3__items
+                  .m-timeline-3__item.m-timeline-3__item--info
+                    span.m-timeline-3__item-time.m--font-focus
+                      | 09:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Contrary to popular belief, Lorem Ipsum is not simply random text.
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By Bob
+                  .m-timeline-3__item.m-timeline-3__item--warning
+                    span.m-timeline-3__item-time.m--font-warning
+                      | 10:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | There are many variations of passages of Lorem Ipsum available.
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By Sean
+                  .m-timeline-3__item.m-timeline-3__item--brand
+                    span.m-timeline-3__item-time.m--font-primary
+                      | 11:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Contrary to popular belief, Lorem Ipsum is not simply random text.
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By James
+                  .m-timeline-3__item.m-timeline-3__item--success
+                    span.m-timeline-3__item-time.m--font-success
+                      | 12:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | The standard chunk of Lorem Ipsum used since the 1500s is reproduced.
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By James
+                  .m-timeline-3__item.m-timeline-3__item--danger
+                    span.m-timeline-3__item-time.m--font-warning
+                      | 14:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Latin words, combined with a handful of model sentence structures.
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By Derrick
+                  .m-timeline-3__item.m-timeline-3__item--info
+                    span.m-timeline-3__item-time.m--font-info
+                      | 15:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Contrary to popular belief, Lorem Ipsum is not simply random text.
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By Iman
+                  .m-timeline-3__item.m-timeline-3__item--brand
+                    span.m-timeline-3__item-time.m--font-danger
+                      | 17:00
+                    .m-timeline-3__item-desc
+                      span.m-timeline-3__item-text
+                        | Lorem Ipsum is therefore always free from repetition, injected humour.
+                      br/
+                      span.m-timeline-3__item-user-name
+                        a.m-link.m-link--metal.m-timeline-3__item-link href="#"
+                          | By Aziko
+  /! End::Timeline 3
+  /! End::Portlet
+  /! End::Section
+  /! Begin::Section
+  .row
+    .col-xl-8
+      /! begin:: Widgets/Application Sales
+      .m-portlet.m-portlet--full-height
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Application Sales
+          .m-portlet__head-tools
+            ul.nav.nav-pills.nav-pills--brand.m-nav-pills--align-right.m-nav-pills--btn-pill.m-nav-pills--btn-sm role="tablist"
+              li.nav-item.m-tabs__item
+                a.nav-link.m-tabs__link.active data-toggle="tab" href="#m_widget11_tab1_content" role="tab"
+                  | Last Month
+              li.nav-item.m-tabs__item
+                a.nav-link.m-tabs__link data-toggle="tab" href="#m_widget11_tab2_content" role="tab"
+                  | All Time
+        .m-portlet__body
+          .tab-content
+            #m_widget11_tab1_content.tab-pane.active
+              /! begin::Widget 11
+              .m-widget11
+                .table-responsive
+                  /! begin::Table
+                  table.table
+                    /! begin::Thead
+                    thead
+                      tr
+                        td.m-widget11__label
+                          | \#
+                        td.m-widget11__app
+                          | Application
+                        td.m-widget11__sales
+                          | Sales
+                        td.m-widget11__change
+                          | Change
+                        td.m-widget11__price
+                          | Avg Price
+                        td.m-widget11__total.m--align-right
+                          | Total
+                    /! end::Thead
+                    /! begin::Tbody
+                    tbody
+                      tr
+                        td
+                          label.m-checkbox.m-checkbox--solid.m-checkbox--single.m-checkbox--brand
+                            input type="checkbox" /
+                            span
+                        td
+                          span.m-widget11__title
+                            | Vertex 2.0
+                          span.m-widget11__sub
+                            | Vertex To By Again
+                        td
+                          | 19,200
+                        td
+                          .m-widget11__chart style=("height:50px; width: 100px")
+                            iframe.chartjs-hidden-iframe style=("display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;") tabindex="-1"
+                            canvas#m_chart_sales_by_apps_1_1 height="50" style=("display: block; width: 100px; height: 50px;") width="100"
+                        td
+                          | $63
+                        td.m--align-right.m--font-brand
+                          | $14,740
+                      tr
+                        td
+                          label.m-checkbox.m-checkbox--solid.m-checkbox--single.m-checkbox--brand
+                            input type="checkbox" /
+                            span
+                        td
+                          span.m-widget11__title
+                            | Metronic
+                          span.m-widget11__sub
+                            | Powerful Admin Theme
+                        td
+                          | 24,310
+                        td
+                          .m-widget11__chart style=("height:50px; width: 100px")
+                            iframe.chartjs-hidden-iframe style=("display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;") tabindex="-1"
+                            canvas#m_chart_sales_by_apps_1_2 height="50" style=("display: block; width: 100px; height: 50px;") width="100"
+                        td
+                          | $39
+                        td.m--align-right.m--font-brand
+                          | $16,010
+                      tr
+                        td
+                          label.m-checkbox.m-checkbox--solid.m-checkbox--single.m-checkbox--brand
+                            input type="checkbox" /
+                            span
+                        td
+                          span.m-widget11__title
+                            | Apex
+                          span.m-widget11__sub
+                            | The Best Selling App
+                        td
+                          | 9,076
+                        td
+                          .m-widget11__chart style=("height:50px; width: 100px")
+                            iframe.chartjs-hidden-iframe style=("display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;") tabindex="-1"
+                            canvas#m_chart_sales_by_apps_1_3 height="50" style=("display: block; width: 100px; height: 50px;") width="100"
+                        td
+                          | $105
+                        td.m--align-right.m--font-brand
+                          | $37,200
+                      tr
+                        td
+                          label.m-checkbox.m-checkbox--solid.m-checkbox--single.m-checkbox--brand
+                            input type="checkbox" /
+                            span
+                        td
+                          span.m-widget11__title
+                            | Cascades
+                          span.m-widget11__sub
+                            | Design Tool
+                        td
+                          | 11,094
+                        td
+                          .m-widget11__chart style=("height:50px; width: 100px")
+                            iframe.chartjs-hidden-iframe style=("display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;") tabindex="-1"
+                            canvas#m_chart_sales_by_apps_1_4 height="50" style=("display: block; width: 100px; height: 50px;") width="100"
+                        td
+                          | $16
+                        td.m--align-right.m--font-brand
+                          | $8,520
+                /! end::Tbody
+                /! end::Table
+                .m-widget11__action.m--align-right
+                  button.btn.m-btn--pill.btn-secondary.m-btn.m-btn--custom.m-btn--hover-brand type="button"
+                    | Generate Report
+            /! end::Widget 11
+            #m_widget11_tab2_content.tab-pane
+              /! begin::Widget 11
+              .m-widget11
+                .table-responsive
+                  /! begin::Table
+                  table.table
+                    /! begin::Thead
+                    thead
+                      tr
+                        td.m-widget11__label
+                          | \#
+                        td.m-widget11__app
+                          | Application
+                        td.m-widget11__sales
+                          | Sales
+                        td.m-widget11__change
+                          | Change
+                        td.m-widget11__price
+                          | Avg Price
+                        td.m-widget11__total.m--align-right
+                          | Total
+                    /! end::Thead
+                    /! begin::Tbody
+                    tbody
+                      tr
+                        td
+                          label.m-checkbox.m-checkbox--solid.m-checkbox--single.m-checkbox--brand
+                            input type="checkbox" /
+                            span
+                        td
+                          span.m-widget11__title
+                            | Loop
+                          span.m-widget11__sub
+                            | CRM System
+                        td
+                          | 19,200
+                        td
+                          .m-widget11__chart style=("height:50px; width: 100px")
+                            iframe.chartjs-hidden-iframe style=("display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;") tabindex="-1"
+                            canvas#m_chart_sales_by_apps_2_1 height="0" style=("display: block; width: 0px; height: 0px;") width="0"
+                        td
+                          | $63
+                        td.m--align-right.m--font-brand
+                          | $34,740
+                      tr
+                        td
+                          label.m-checkbox.m-checkbox--solid.m-checkbox--single.m-checkbox--brand
+                            input type="checkbox" /
+                            span
+                        td
+                          span.m-widget11__title
+                            | Selto
+                          span.m-widget11__sub
+                            | Powerful Website Builder
+                        td
+                          | 24,310
+                        td
+                          .m-widget11__chart style=("height:50px; width: 100px")
+                            iframe.chartjs-hidden-iframe style=("display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;") tabindex="-1"
+                            canvas#m_chart_sales_by_apps_2_2 height="0" style=("display: block; width: 0px; height: 0px;") width="0"
+                        td
+                          | $39
+                        td.m--align-right.m--font-brand
+                          | $46,010
+                      tr
+                        td
+                          label.m-checkbox.m-checkbox--solid.m-checkbox--single.m-checkbox--brand
+                            input type="checkbox" /
+                            span
+                        td
+                          span.m-widget11__title
+                            | Jippo
+                          span.m-widget11__sub
+                            | The Best Selling App
+                        td
+                          | 9,076
+                        td
+                          .m-widget11__chart style=("height:50px; width: 100px")
+                            iframe.chartjs-hidden-iframe style=("display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;") tabindex="-1"
+                            canvas#m_chart_sales_by_apps_2_3 height="0" style=("display: block; width: 0px; height: 0px;") width="0"
+                        td
+                          | $105
+                        td.m--align-right.m--font-brand
+                          | $67,800
+                      tr
+                        td
+                          label.m-checkbox.m-checkbox--solid.m-checkbox--single.m-checkbox--brand
+                            input type="checkbox" /
+                            span
+                        td
+                          span.m-widget11__title
+                            | Verto
+                          span.m-widget11__sub
+                            | Web Development Tool
+                        td
+                          | 11,094
+                        td
+                          .m-widget11__chart style=("height:50px; width: 100px")
+                            iframe.chartjs-hidden-iframe style=("display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;") tabindex="-1"
+                            canvas#m_chart_sales_by_apps_2_4 height="0" style=("display: block; width: 0px; height: 0px;") width="0"
+                        td
+                          | $16
+                        td.m--align-right.m--font-brand
+                          | $18,520
+                /! end::Tbody
+                /! end::Table
+                .m-widget11__action.m--align-right
+                  button.btn.m-btn--pill.btn-secondary.m-btn.m-btn--custom.m-btn--hover-brand type="button"
+                    | Generate Report
+    /! end::Widget 11
+    /! end:: Widgets/Application Sales
+    .col-xl-4
+      /! begin:: Widgets/Latest Updates
+      .m-portlet.m-portlet--full-height.m-portlet--fit
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Latest Updates
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item.m-dropdown.m-dropdown--inline.m-dropdown--arrow.m-dropdown--align-right.m-dropdown--align-push m-dropdown-toggle="hover"
+                a.m-portlet__nav-link.m-dropdown__toggle.dropdown-toggle.btn.btn--sm.m-btn--pill.btn-secondary.m-btn.m-btn--label-brand href="#"
+                  | Today
+                .m-dropdown__wrapper
+                  span.m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust
+                  .m-dropdown__inner
+                    .m-dropdown__body
+                      .m-dropdown__content
+                        ul.m-nav
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-share
+                              span.m-nav__link-text
+                                | Activity
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-chat-1
+                              span.m-nav__link-text
+                                | Messages
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-info
+                              span.m-nav__link-text
+                                | FAQ
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-lifebuoy
+                              span.m-nav__link-text
+                                | Support
+        .m-portlet__body
+          .m-widget4.m-widget4--chart-bottom style=("min-height: 350px")
+            .m-widget4__item
+              .m-widget4__ext
+                a.m-widget4__icon.m--font-brand href="#"
+                  i.flaticon-interface-3
+              .m-widget4__info
+                span.m-widget4__text
+                  | Make Metronic Great Again
+              .m-widget4__ext
+                span.m-widget4__number.m--font-accent
+                  | +500
+            .m-widget4__item
+              .m-widget4__ext
+                a.m-widget4__icon.m--font-brand href="#"
+                  i.flaticon-folder-4
+              .m-widget4__info
+                span.m-widget4__text
+                  | Green Maker Team
+              .m-widget4__ext
+                span.m-widget4__stats.m--font-info
+                  span.m-widget4__number.m--font-accent
+                    | \-64
+            .m-widget4__item
+              .m-widget4__ext
+                a.m-widget4__icon.m--font-brand href="#"
+                  i.flaticon-line-graph
+              .m-widget4__info
+                span.m-widget4__text
+                  | Make Apex Great Again
+              .m-widget4__ext
+                span.m-widget4__stats.m--font-info
+                  span.m-widget4__number.m--font-accent
+                    | +1080
+            .m-widget4__item.m-widget4__item--last
+              .m-widget4__ext
+                a.m-widget4__icon.m--font-brand href="#"
+                  i.flaticon-diagram
+              .m-widget4__info
+                span.m-widget4__text
+                  | A Programming Language
+              .m-widget4__ext
+                span.m-widget4__stats.m--font-info
+                  span.m-widget4__number.m--font-accent
+                    | +19
+            .m-widget4__chart.m-portlet-fit--sides.m--margin-top-20.m-portlet-fit--bottom1 style="height:120px;"
+              canvas#m_chart_latest_updates
+  /! end:: Widgets/Latest Updates
+  /! End::Section
+  /! Begin::Section
+  .row
+    .col-xl-8
+      .m-portlet.m-portlet--mobile
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Exclusive Datatable Plugin
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item
+                .m-dropdown.m-dropdown--inline.m-dropdown--arrow.m-dropdown--align-right.m-dropdown--align-push aria-expanded="true" m-dropdown-toggle="hover"
+                  a.m-portlet__nav-link.btn.btn-lg.btn-secondary.m-btn.m-btn--icon.m-btn--icon-only.m-btn--pill.m-dropdown__toggle href="#"
+                    i.la.la-ellipsis-h.m--font-brand
+                  .m-dropdown__wrapper
+                    span.m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust
+                    .m-dropdown__inner
+                      .m-dropdown__body
+                        .m-dropdown__content
+                          ul.m-nav
+                            li.m-nav__section.m-nav__section--first
+                              span.m-nav__section-text
+                                | Quick Actions
+                            li.m-nav__item
+                              a.m-nav__link href=""
+                                i.m-nav__link-icon.flaticon-share
+                                span.m-nav__link-text
+                                  | Create Post
+                            li.m-nav__item
+                              a.m-nav__link href=""
+                                i.m-nav__link-icon.flaticon-chat-1
+                                span.m-nav__link-text
+                                  | Send Messages
+                            li.m-nav__item
+                              a.m-nav__link href=""
+                                i.m-nav__link-icon.flaticon-multimedia-2
+                                span.m-nav__link-text
+                                  | Upload File
+                            li.m-nav__section
+                              span.m-nav__section-text
+                                | Useful Links
+                            li.m-nav__item
+                              a.m-nav__link href=""
+                                i.m-nav__link-icon.flaticon-info
+                                span.m-nav__link-text
+                                  | FAQ
+                            li.m-nav__item
+                              a.m-nav__link href=""
+                                i.m-nav__link-icon.flaticon-lifebuoy
+                                span.m-nav__link-text
+                                  | Support
+                            li.m-nav__separator.m-nav__separator--fit.m--hide
+                            li.m-nav__item.m--hide
+                              a.btn.btn-outline-danger.m-btn.m-btn--pill.m-btn--wide.btn-sm href="#"
+                                | Submit
+        .m-portlet__body
+          /! begin: Datatable
+          #m_datatable_latest_orders.m_datatable
+    /! end: Datatable
+    .col-xl-4
+      /! begin:: Widgets/Audit Log
+      .m-portlet.m-portlet--full-height
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Audit Log
+          .m-portlet__head-tools
+            ul.nav.nav-pills.nav-pills--brand.m-nav-pills--align-right.m-nav-pills--btn-pill.m-nav-pills--btn-sm role="tablist"
+              li.nav-item.m-tabs__item
+                a.nav-link.m-tabs__link.active data-toggle="tab" href="#m_widget4_tab1_content" role="tab"
+                  | Today
+              li.nav-item.m-tabs__item
+                a.nav-link.m-tabs__link data-toggle="tab" href="#m_widget4_tab2_content" role="tab"
+                  | Week
+              li.nav-item.m-tabs__item
+                a.nav-link.m-tabs__link data-toggle="tab" href="#m_widget4_tab3_content" role="tab"
+                  | Month
+        .m-portlet__body
+          .tab-content
+            #m_widget4_tab1_content.tab-pane.active
+              .m-scrollable data-max-height="400" data-scrollable="true" style=("height: 400px; overflow: hidden;")
+                .m-list-timeline.m-list-timeline--skin-light
+                  .m-list-timeline__items
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--success
+                      span.m-list-timeline__text
+                        | 12 new users registered
+                      span.m-list-timeline__time
+                        | Just now
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--info
+                      span.m-list-timeline__text
+                        | System shutdown
+                        span.m-badge.m-badge--success.m-badge--wide
+                          | pending
+                      span.m-list-timeline__time
+                        | 14 mins
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--danger
+                      span.m-list-timeline__text
+                        | New invoice received
+                      span.m-list-timeline__time
+                        | 20 mins
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--accent
+                      span.m-list-timeline__text
+                        | DB overloaded 80%
+                        span.m-badge.m-badge--info.m-badge--wide
+                          | settled
+                      span.m-list-timeline__time
+                        | 1 hr
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--warning
+                      span.m-list-timeline__text
+                        | System error -
+                        a.m-link href="#"
+                          | Check
+                      span.m-list-timeline__time
+                        | 2 hrs
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--brand
+                      span.m-list-timeline__text
+                        | Production server down
+                      span.m-list-timeline__time
+                        | 3 hrs
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--info
+                      span.m-list-timeline__text
+                        | Production server up
+                      span.m-list-timeline__time
+                        | 5 hrs
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--success
+                      span.m-list-timeline__text href=""
+                        | New order received
+                        span.m-badge.m-badge--danger.m-badge--wide
+                          | urgent
+                      span.m-list-timeline__time
+                        | 7 hrs
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--success
+                      span.m-list-timeline__text
+                        | 12 new users registered
+                      span.m-list-timeline__time
+                        | Just now
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--info
+                      span.m-list-timeline__text
+                        | System shutdown
+                        span.m-badge.m-badge--success.m-badge--wide
+                          | pending
+                      span.m-list-timeline__time
+                        | 14 mins
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--danger
+                      span.m-list-timeline__text
+                        | New invoice received
+                      span.m-list-timeline__time
+                        | 20 mins
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--accent
+                      span.m-list-timeline__text
+                        | DB overloaded 80%
+                        span.m-badge.m-badge--info.m-badge--wide
+                          | settled
+                      span.m-list-timeline__time
+                        | 1 hr
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--danger
+                      span.m-list-timeline__text
+                        | New invoice received
+                      span.m-list-timeline__time
+                        | 20 mins
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--accent
+                      span.m-list-timeline__text
+                        | DB overloaded 80%
+                        span.m-badge.m-badge--info.m-badge--wide
+                          | settled
+                      span.m-list-timeline__time
+                        | 1 hr
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--warning
+                      span.m-list-timeline__text
+                        | System error -
+                        a.m-link href="#"
+                          | Check
+                      span.m-list-timeline__time
+                        | 2 hrs
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--brand
+                      span.m-list-timeline__text
+                        | Production server down
+                      span.m-list-timeline__time
+                        | 3 hrs
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--info
+                      span.m-list-timeline__text
+                        | Production server up
+                      span.m-list-timeline__time
+                        | 5 hrs
+                    .m-list-timeline__item
+                      span.m-list-timeline__badge.m-list-timeline__badge--success
+                      span.m-list-timeline__text href=""
+                        | New order received
+                        span.m-badge.m-badge--danger.m-badge--wide
+                          | urgent
+                      span.m-list-timeline__time
+                        | 7 hrs
+            #m_widget4_tab2_content.tab-pane
+            #m_widget4_tab3_content.tab-pane
+  /! end:: Widgets/Audit Log
+  /! End::Section
+  /! Begin::Section
+  .row
+    .col-xl-4
+      /! begin:: Widgets/Announcements 1
+      .m-portlet.m--bg-accent.m-portlet--bordered-semi.m-portlet--skin-dark.m-portlet--full-height
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Announcements
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item.m-dropdown.m-dropdown--inline.m-dropdown--arrow.m-dropdown--align-right.m-dropdown--align-push m-dropdown-toggle="hover"
+                a.m-portlet__nav-link.m-portlet__nav-link--icon.m-portlet__nav-link--icon-xl href="#"
+                  i.la.la-ellipsis-h.m--font-light
+                .m-dropdown__wrapper
+                  span.m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust
+                  .m-dropdown__inner
+                    .m-dropdown__body
+                      .m-dropdown__content
+                        ul.m-nav
+                          li.m-nav__section.m-nav__section--first
+                            span.m-nav__section-text
+                              | Quick Actions
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-share
+                              span.m-nav__link-text
+                                | Activity
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-chat-1
+                              span.m-nav__link-text
+                                | Messages
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-info
+                              span.m-nav__link-text
+                                | FAQ
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-lifebuoy
+                              span.m-nav__link-text
+                                | Support
+                          li.m-nav__separator.m-nav__separator--fit
+                          li.m-nav__item
+                            a.btn.btn-outline-danger.m-btn.m-btn--pill.m-btn--wide.btn-sm href="#"
+                              | Cancel
+        .m-portlet__body
+          /! begin::Widget 7
+          .m-widget7.m-widget7--skin-dark
+            .m-widget7__desc
+              | Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy euismod tinciduntut laoreet doloremagna
+            .m-widget7__user
+              .m-widget7__user-img
+                = image_tag '100_3.jpg', class: 'm-widget7__img'
+              .m-widget7__info
+                span.m-widget7__username
+                  | Dan Bold
+                br/
+                span.m-widget7__time
+                  | 3 days ago
+            .m-widget7__button
+              a.m-btn.m-btn--pill.btn.btn-danger href="#" role="button"
+                | All Feeds
+    /! end::Widget 7
+    /! end:: Widgets/Announcements 1
+    .col-xl-4
+      /! begin:: Widgets/Blog
+      .m-portlet.m-portlet--bordered-semi.m-portlet--full-height.m-portlet--rounded-force
+        .m-portlet__head.m-portlet__head--fit
+          .m-portlet__head-caption
+            .m-portlet__head-action
+              button.btn.btn-sm.m-btn--pill.btn-brand type="button"
+                | Blog
+        .m-portlet__body
+          .m-widget19
+            .m-widget19__pic.m-portlet-fit--top.m-portlet-fit--sides style=("min-height-: 286px")
+              = image_tag 'blog1.jpg'
+              h3.m-widget19__title.m--font-light
+                | Introducing New Feature
+              .m-widget19__shadow
+            .m-widget19__content
+              .m-widget19__header
+                .m-widget19__user-img
+                  = image_tag 'user1.jpg', class: 'm-widget19__img'
+                .m-widget19__info
+                  span.m-widget19__username
+                    | Anna Krox
+                  br/
+                  span.m-widget19__time
+                    | UX/UI Designer, Google
+                .m-widget19__stats
+                  span.m-widget19__number.m--font-brand
+                    | 18
+                  span.m-widget19__comment
+                    | Comments
+              .m-widget19__body
+                | Lorem Ipsum is simply dummy text of the printing and typesetting industry scrambled it to make text of the printing and typesetting industry scrambled a type specimen book text of the dummy text of the printing printing and typesetting industry scrambled dummy text of the printing.
+            .m-widget19__action
+              button.btn.m-btn--pill.btn-secondary.m-btn.m-btn--hover-brand.m-btn--custom type="button"
+                | Read More
+    /! end:: Widgets/Blog
+    .col-xl-4
+      /! begin:: Widgets/Sales States
+      .m-portlet.m-portlet--full-height
+        .m-portlet__head
+          .m-portlet__head-caption
+            .m-portlet__head-title
+              h3.m-portlet__head-text
+                | Sales Stats
+          .m-portlet__head-tools
+            ul.m-portlet__nav
+              li.m-portlet__nav-item.m-dropdown.m-dropdown--inline.m-dropdown--arrow.m-dropdown--align-right.m-dropdown--align-push aria-expanded="true" m-dropdown-toggle="hover"
+                a.m-portlet__nav-link.m-portlet__nav-link--icon.m-portlet__nav-link--icon-xl href="#"
+                  i.fa.fa-genderless.m--font-brand
+                .m-dropdown__wrapper
+                  span.m-dropdown__arrow.m-dropdown__arrow--right.m-dropdown__arrow--adjust style=("left: auto; right: 17px;")
+                  .m-dropdown__inner
+                    .m-dropdown__body
+                      .m-dropdown__content
+                        ul.m-nav
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-share
+                              span.m-nav__link-text
+                                | Activity
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-chat-1
+                              span.m-nav__link-text
+                                | Messages
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-info
+                              span.m-nav__link-text
+                                | FAQ
+                          li.m-nav__item
+                            a.m-nav__link href=""
+                              i.m-nav__link-icon.flaticon-lifebuoy
+                              span.m-nav__link-text
+                                | Support
+        .m-portlet__body
+          .m-widget6
+            .m-widget6__head
+              .m-widget6__item
+                span.m-widget6__caption
+                  | Sceduled
+                span.m-widget6__caption
+                  | Count
+                span.m-widget6__caption.m--align-right
+                  | Amount
+            .m-widget6__body
+              .m-widget6__item
+                span.m-widget6__text
+                  | 16/13/17
+                span.m-widget6__text
+                  | 67
+                span.m-widget6__text.m--align-right.m--font-boldest.m--font-brand
+                  | $14,740
+              .m-widget6__item
+                span.m-widget6__text
+                  | 02/28/17
+                span.m-widget6__text
+                  | 120
+                span.m-widget6__text.m--align-right.m--font-boldest.m--font-brand
+                  | $11,002
+              .m-widget6__item
+                span.m-widget6__text
+                  | 03/06/17
+                span.m-widget6__text
+                  | 32
+                span.m-widget6__text.m--align-right.m--font-boldest.m--font-brand
+                  | $10,900
+              .m-widget6__item
+                span.m-widget6__text
+                  | 10/21/17
+                span.m-widget6__text
+                  | 130
+                span.m-widget6__text.m--align-right.m--font-boldest.m--font-brand
+                  | $14,740
+              .m-widget6__item
+                span.m-widget6__text
+                  | 01/02/17
+                span.m-widget6__text
+                  | 5
+                span.m-widget6__text.m--align-right.m--font-boldest.m--font-brand
+                  | $18,540
+              .m-widget6__item
+                span.m-widget6__text
+                  | 03/06/17
+                span.m-widget6__text
+                  | 32
+                span.m-widget6__text.m--align-right.m--font-boldest.m--font-brand
+                  | $10,900
+              .m-widget6__item
+                span.m-widget6__text
+                  | 12/31/17
+                span.m-widget6__text
+                  | 201
+                span.m-widget6__text.m--align-right.m--font-boldest.m--font-brand
+                  | $25,609
+            .m-widget6__foot
+              .m-widget6__action.m--align-right
+                button.btn.m-btn--pill.btn-secondary.m-btn.m-btn--hover-brand.m-btn--custom type="button"
+                  | Export
+
